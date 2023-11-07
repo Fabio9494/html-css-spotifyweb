@@ -3,3 +3,93 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+
+
+.top{
+    height: calc(100vh - 100px);
+}
+
+.top-content{
+    height: 100%;
+    display: flex;
+}
+
+header{
+    background-color: #080B12;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 200px;
+}
+
+.sidebar{
+    width: 200px;
+    background-color: #000000;
+}
+
+.container{
+    background-color: #141922;
+    width: calc(100vw - 200px);
+    overflow-y: scroll;
+}
+
+.music-tracks-menu{
+    padding-top: 100px;
+}
+
+.row{
+    padding: 10px;
+}
+
+.col{
+    background-color: red;
+    width: calc(100% / 6 - 20px);
+    height: 150px;
+    margin: 10px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.bottom{
+    height: 100px;
+    background-color: #282828;
+}
+
+.border-radius-50{
+    border-radius: 50%;
+}
+
+.color-white{
+    color: white;
+}
+
+.color-gray{
+    color:#7D7F84;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px){
+    .col{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width: 575px){
+    .col{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .sidebar{
+        width: 50px;
+    }
+
+    .container{
+        width: calc(100vw - 50px);
+    }
+}
