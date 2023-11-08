@@ -12,39 +12,52 @@
     <main>
         <div class="top">
             <div class="top-content">
-                <div class="sidebar">
-
-                        <ul>
+                <div class="sidebar overflow-hidden display-flex culumn space-between">
+                    <div class="margin-lr-10">
+                        <ul class="margin-lr-0">
                             <li class="logo none"><img src="./img/logo.svg" alt=""></li>
                             <li class="logo-small"><img src="./img/logo-small.svg" alt=""></li>
                             <li><i class="fa-sharp fa-solid fa-house fa-lg" style="color: #b0b0b0;"></i><span class="none"> Home </span></li>
                             <li><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #b0b0b0;"></i> <span class="none"> Cerca</span></li>
                             <li><i class="fa-solid fa-lines-leaning fa-flip-horizontal fa-lg" style="color: #b0b0b0;"></i> <span class="none"> La mia libreria </span></li>
                         </ul>
-                        <ul class="none">
-                            <li class="color-white">PLAYLIST</li>
-                            <lI><i class="fa-sharp fa-solid fa-square-plus fa-2xl" style="color: #b0b0b0;"></i> Crea Playlist</lI>
+                        <div>
+                            <div class="padding-sidebar-item color-white none">PLAYLIST</div>
+                            <div class="padding-sidebar-item color-gray none"><i class="fa-sharp fa-solid fa-square-plus fa-2xl" style="color: #b0b0b0;"></i> Crea Playlist</div>   
+                         <ul class="none overflow">
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
-                            <li class="padding-bottom-100px">Nome Playlist</li>
-                        </ul>
-                        <div class="john-doe">
+                            <li>Nome Playlist</li>
+                         </ul>
+                        </div>  
+                    </div>    
+                    <div class="john-doe margin-lr-10">
                             <ul>
                                 <li><i class="fa-regular fa-circle-down fa-sm" style="color: #b0b0b0;"></i><span class="none"> Installa app </span></li>
                                 <li ><hr class="none"></li>
                                 <li><i class="fa-solid fa-circle-user fa-lg" style="color: #b0b0b0;"></i><span class="none"> John Doe</span></li>
                             </ul>
-                        </div>
+                    </div>
                 </div>
                 <div class="container">
                     <header>
                         <button>EFFETTUA L'UPGRADE</button>
                     </header>
                     <div class="music-tracks-menu">
+                        <div class="display-flex justify-content-center">
+                            <ul class="display-flex wrap font-size-15 ">
+                                <li class="padding-20" ><div>IN EVIDENZA</div> <div><hr class="hr-style"></div></li>
+                                <li class="padding-20">PODCAST</li>
+                                <li class="padding-20">CLASSIFICHE</li>
+                                <li class="padding-20">GENERI E MOOD</li>
+                                <li class="padding-20">NUOVE USCITE</li>
+                                <li class="padding-20">SCOPRI</li>
+                            </ul>
+                        </div>
                         <div class="row">
                             <h2 class="color-white">Recently Played</h2>
                         </div>
@@ -116,7 +129,34 @@
 
     <!-- footer -->
     <footer>
-        <div class="bottom"></div>
+        <div class="bottom">
+            <div class="row display-flex">
+                <div class="col-33 display-flex align-items-center">
+                    <img class="margin-5" src="./img/sinister.jpeg" alt="" style="width: 10%;">
+                    <div class="margin-5 color-white">Sinister <div class="color-gray">Brano Nome</div> </div>
+                    <div class="margin-20"><i class="margin-5 fa-regular fa-heart fa-sm" style="color: #b0b0b0;"></i> <i class="margin-5 fa-regular fa-folder fa-sm" style="color: #b0b0b0;"></i></div>
+                </div>
+                <div class="col-33 display-flex culumn">
+                    <div>
+                        <i class="margin-5 fa-solid fa-shuffle fa-sm" style="color: #b0b0b0;"></i>
+                        <i class="margin-5 fa-solid fa-backward-step fa-sm" style="color: #b0b0b0;"></i> 
+                        <i class="margin-5 fa-regular fa-circle-play fa-sm" style="color: #b0b0b0;"></i>
+                        <i class="margin-5 fa-solid fa-backward-step fa-flip-both fa-sm" style="color: #b0b0b0;"></i>
+                        <i class="margin-5 fa-solid fa-rotate-right fa-sm" style="color: #b0b0b0;"></i>
+                    </div>
+                    
+                    <div class="width-100 margin-top-15 display-flex align-items-center justify-content-center "><span class="color-white">0:25</span> <input class= "width-60 margin-lr-10" type="range"> <span class="color-white">4:35</span></div>
+                </div>    
+                <div class="col-33  display-flex align-items-center flex-end">
+                    <div class="margin-lr-0 display-flex flex-end align-items-center">
+                        <i class="margin-5 fa-solid fa-list fa-xs" style="color: #ffffff;"></i>
+                        <i class="margin-5 fa-sharp fa-solid fa-desktop fa-xs" style="color: #ffffff;"></i>
+                        <i class="margin-5 fa-solid fa-volume-high fa-xs" style="color: #ffffff;"></i>
+                        <input class="width-40 margin-lr-0" type="range">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
