@@ -9,7 +9,7 @@ main{
 }
 
 .top{
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 80px); 
 }
  
 .top-content{
@@ -84,6 +84,47 @@ li{
     padding: 10px 0px;
 }
 
+.heart-folder{
+    display: flex;
+}
+
+.music-bar{
+    width: 80%;
+    height: 5px;
+    background-color: #7D7F84;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.music-bar-in{
+    width: 20%;
+    height: 5px;
+    background-color: #dcdcdc; 
+    border: none;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.music-bar-2{
+    width:100px;
+    height: 5px;
+    background-color: #7D7F84;
+    border: none;
+    border-radius: 20px;
+}
+
+svg{
+    width: 8%;
+}
+
+.svg-color{
+    opacity: 0.5;
+}
+
+.play-album{
+    transform: scale(1.9);
+}
 
 button{
     background-color:#080B12;
@@ -92,7 +133,7 @@ button{
     border-radius: 50px;
     color: white;
     position: absolute;
-    right: 10px;
+    right: 30px;
     bottom: 15px;
 }
 
@@ -103,6 +144,87 @@ button{
 .overflow{
     overflow-y: auto;
     height: 40vh;
+}
+
+.playlist{
+    position: relative;
+}
+
+.overlay{
+    background-color: #000000b4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.playlist:hover .overlay{
+    display: block;
+}
+
+li:hover{
+    color: white;
+}
+
+li:hover .svg-color{
+    opacity: 1;
+}
+
+.crea-playlist:hover{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+.crea-playlist:hover .show{
+    display: none;
+}
+
+.crea-playlist:hover .hidden{
+    display: inline-block;
+}
+
+.heart:hover .show{
+    display: none;
+}
+
+.folder:hover .hidden{
+    display: inline-block;
+}
+
+.folder:hover .show{
+    display: none;
+}
+
+.heart:hover .hidden{
+    display: inline-block;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.play:hover{
+    transform: scale(1.5);
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+.center-play{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
 }
 
 .center{
@@ -121,12 +243,22 @@ button{
     width: 100%;
 }
 
+
+
 .margin-lr-10{
     margin: 0 10px;
 }
 
 .margin-lr-0{
     margin: 0;
+}
+
+.padding-tb-0{
+    padding: 10px 0px;
+}
+
+.display{
+    display: inline;
 }
 
 span{
@@ -179,7 +311,7 @@ span{
 }
 
 .bottom{
-    height: 70px;
+    height: 80px;
     background-color: #282828;
     font-family: sans-serif;
     font-size: 12px;
@@ -202,6 +334,10 @@ span{
     color:#7D7F84;
 }
 
+.bg-gray{
+    background-color:#7D7F84 ;
+}
+
 .hr-style{
     border: none;
     height: 1px;
@@ -217,17 +353,27 @@ span{
     padding: 20px;
 }
 
-.font-size-15{
+.font-size-12{
     font-size: 12px;
+}
+
+.font-size-8{
+    font-size: 8px;
+}
+
+.font-size-10{
+    font-size: 10px;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /*responsive*/
 @media screen and (max-width: 768px){
     .col{
         width: calc(100% / 4 - 20px);
-    }
-
-    
+    }  
 }
 
 @media screen and (max-width: 575px){
@@ -235,12 +381,16 @@ span{
         width: calc(100% / 2 - 20px);
     }
 
-    .width-60{
-        width: 40%;
+    .music-bar-2{
+        width: 60px;
+    }
+
+    .heart-folder{
+        display: block;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 450px){
     .sidebar{
         width: 50px;
     }
@@ -259,5 +409,10 @@ span{
 
     .logo-small{
         display: block;
+    }
+
+    svg{
+        width: 50%;
+        
     }
 }
